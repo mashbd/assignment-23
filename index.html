@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS List Style</title>
+    <style>
+        #list{
+            background-color: #ccc; 
+            width: 50%;    
+            box-sizing: border-box; 
+            margin: 0 auto;
+            }
+        #list  li{
+          list-style: none;
+          display: inline-block;
+          font-size: 20px;
+          color: #fff;
+          padding: 18px;
+        }
+        #list li:hover{
+            background-color: green;
+        }
+        #list li.active{
+            background-color: red;
+        }
+
+         #list-one li{
+             padding: 10px;
+             text-transform: capitalize;
+             font-size: 18px;
+             color: #333;
+             list-style-type:none;
+             list-style-image: url(download.png);
+             margin-left: 0 auto;
+       
+         }  
+            
+        /* #list-one li:before{ 
+            content:'';
+             background-image: url(right.png);
+             display: block;
+            height: 15px;
+            width: 15px;
+        } */
+        
+       
+        #list-one li:nth-child(even){
+            background-color: rgb(146, 144, 40);
+        }
+        #list-one li:nth-child(odd){
+            background-color: rgb(0, 255, 191);
+        }
+        h2{
+            text-align: center;
+            margin-bottom: 80px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h2>CSS List Style</h2>
+    <ul id="list">
+        <li class="active">Home</li>
+        <li>About</li>
+        <li>Blog</li>
+        <li>Video</li>
+        <li>Contact me</li>
+    </ul>
+    <ul id="list-one">
+        <li>Pen</li>
+        <li>Khata</li>
+        <li>keyboard</li>
+        <li>laptop</li>
+        <li>Mouse</li>
+        <li>Modem</li>
+        <li>Monitor</li>
+        <li>USB Hub</li>
+    </ul>
+</html>
